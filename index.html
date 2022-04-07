@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Waitlist</title>
+</head>
+<body>
+    <form action="">
+        <h1>UNI-TEK MEDIA</h1>
+        <p>Join Africa's largest Tech community across all campuses to network and stay up-to-date on trend in the University Tech space.</p>
+
+        <div class="input-button">
+            <input type="text" placeholder="Email Address" required id="contact-email" onkeyup="validateEmail()">
+             
+            <button onclick="return validateForm()">Join Waitlist</button>
+        </div>
+        <div id="errors">
+            <div id="email-error"></div>
+            <div id="submit-error"></div>
+        </div>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>

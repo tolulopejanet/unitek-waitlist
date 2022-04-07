@@ -1,0 +1,143 @@
+@import './resets'; 
+
+$phone: 440px;
+$tablet: 768px;
+$desktop: 1366px;
+
+body{
+    background-image: url("../images/one.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+}
+form{
+    width: 596px;
+    height: 350px;
+    background-color: #fff;
+
+    h1{
+        text-align: center;
+        font-size: 34px;
+        color: #646D94;
+        padding: 40px 0 30px 0;
+        
+    }
+    p{
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        width: 90%;
+        margin: auto;
+        text-align: left;
+        color: rgba(0,0,0,0.7);
+        opacity: 0.8;
+        line-height: 30px;
+    }
+    .input-button{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    input{
+        height: 70px;
+        width: 583px;
+        border-radius: 20px;
+        background-color: #C4C4C4;
+        outline: 0;
+        border: none;
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 50px;
+        color: rgba(0,0,0,0.4);
+    }
+    button{
+        height: 70px;
+        width: 180px;
+        border-radius: 20px;
+        padding: 20px;
+        margin-left: -100px;
+        background-color: #646D94;
+        outline: 0;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #errors{
+        display: flex;
+    }
+    #email-error, #submit-error{
+        color: red;
+        font-size: 20px;
+        margin-left: 30px;
+        margin-top: 10px;
+        
+    }
+}
+
+@media(max-width: $phone) and (min-width: 200px){
+    form{
+        width: 350px;
+        height: 200px;
+        h1{
+            font-size: 14px;
+            padding: 40px 0 20px 0;   
+        }
+        p{
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            line-height: 22px;
+        }
+        input{
+            height: 30px;
+            width: 180px;
+            border-radius: 10px;
+            font-size: 10px;
+            padding-left: 20px;
+        }
+        button{
+            height: 30px;
+            width: 90px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: -30px;
+            font-size: 10px;
+        }
+    }
+}
+
+@media(max-width: $tablet){
+    form{
+        width: 450px;
+        height: 300px;
+        h1{
+            font-size: 24px; 
+        }
+        p{
+            font-size: 18px;
+        }
+        input{
+            height: 40px;
+            width: 310px;
+            border-radius: 10px;
+            font-size: 16px;
+            padding-left: 20px;
+        }
+        button{
+            height: 40px;
+            width: 130px;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: -30px;
+            font-size: 16px;
+        }
+        #email-error, #submit-error{
+            font-size: 10px;
+            margin-left: 10px;
+            
+        }
+    }
+}
