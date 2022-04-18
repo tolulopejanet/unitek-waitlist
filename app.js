@@ -12,7 +12,6 @@ function validateEmail(){
         emailError.innerHTML = 'Invalid Email!';
         return false;
     }
-    emailError.innerHTML = '<i class="fas fa-check-circle"></i>';
     return true;
 }
 

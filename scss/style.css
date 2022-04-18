@@ -94,34 +94,49 @@ form #email-error, form #submit-error {
   margin-top: 10px;
 }
 
-@media (max-width: 440px) and (min-width: 200px) {
+@media (min-width: 200px) and (max-width: 400px) {
   form {
-    width: 350px;
-    height: 200px;
+    width: 250px !important;
+    height: 240px !important;
   }
   form h1 {
-    font-size: 14px;
-    padding: 40px 0 20px 0;
+    font-size: 20px !important;
+    padding-bottom: 10px !important;
   }
   form p {
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    line-height: 22px;
+    font-size: 12px !important;
+    letter-spacing: 1px;
+    line-height: 15px;
+    word-spacing: 2px;
   }
   form input {
-    height: 30px;
-    width: 180px;
-    border-radius: 10px;
-    font-size: 10px;
-    padding-left: 20px;
+    height: 40px;
+    width: 100px;
+    font-size: 12px !important;
   }
   form button {
-    height: 30px;
-    width: 90px;
-    border-radius: 10px;
-    padding: 5px;
-    margin-left: -30px;
+    width: 100px;
+    margin-left: -50px !important;
+    font-size: 12px !important;
+  }
+  form #email-error, form #submit-error {
     font-size: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  form {
+    width: 350px !important;
+    height: 240px !important;
+  }
+  form h1 {
+    font-size: 20px !important;
+  }
+  form p {
+    font-size: 15px !important;
+    letter-spacing: 1px;
+    line-height: 20px;
   }
 }
 
