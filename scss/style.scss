@@ -5,7 +5,8 @@ $tablet: 768px;
 $desktop: 1366px;
 
 body{
-    background-image: url("../images/one.jpg");
+    background-image: url("../images/background.png");
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,9 +80,10 @@ form{
 }
 
 @media (min-width: 200px) and (max-width: 400px){
+
     form{
-        width: 250px !important;
-        height: 240px !important;
+        width: 295px !important;
+        height: 230px !important;
         h1{
             font-size: 20px !important; 
             padding-bottom: 10px !important;

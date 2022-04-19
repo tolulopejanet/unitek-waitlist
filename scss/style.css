@@ -6,7 +6,8 @@
 }
 
 body {
-  background-image: url("../images/one.jpg");
+  background-image: url("../images/background.png");
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,8 +97,8 @@ form #email-error, form #submit-error {
 
 @media (min-width: 200px) and (max-width: 400px) {
   form {
-    width: 250px !important;
-    height: 240px !important;
+    width: 295px !important;
+    height: 230px !important;
   }
   form h1 {
     font-size: 20px !important;
