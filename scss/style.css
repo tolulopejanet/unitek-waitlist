@@ -8,6 +8,9 @@
 body {
   background-image: url("../images/background.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,6 +99,12 @@ form #email-error, form #submit-error {
 }
 
 @media (min-width: 200px) and (max-width: 400px) {
+  body {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 30%;
+  }
   form {
     width: 295px !important;
     height: 230px !important;
